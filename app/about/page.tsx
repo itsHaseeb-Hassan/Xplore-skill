@@ -1,6 +1,6 @@
-import Footer from "../components/Footer"
 import Navbar from "../components/Navbar"
-
+import Image from "next/image"
+import Link from "next/link"
 const Page = () => {
   return (
     <div>
@@ -11,16 +11,16 @@ const Page = () => {
         <section className="about-us">
         <div className="row">
             <div className="about-col">
-                <h1>We are the world's largest University</h1>
+                <h1>We are the world&apos;s largest University</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore cumque in accusantium molestias maiores fuga vitae eos, ducimus officiis repudiandae voluptatem error. Laboriosam, numquam blanditiis aspernatur, nobis tempora consequatur id aliquam asperiores voluptatum iste animi voluptatem fugiat totam excepturi dolor.</p>
-                <a href="#" className="hero_btn btn">EXPLORE NOW</a>
+                <Link href="" className="hero_btn btn link">EXPLORE NOW</Link>
             </div>
             <div className="about-col">
-                <img src="img/about.png" alt=""/>
+                <Image src="/img/about.png" alt="" width={500} height={500}/>
+               
             </div>
         </div>
     </section>
-    <Footer />
     </div>
   )
 }

@@ -1,7 +1,6 @@
 import Card from "../components/Card"
 import Navbar from "../components/Navbar"
 import FacilityCardImage from "../components/FacilityCardImage"
-import Footer from "../components/Footer"
 const page = () => {
   return (
     <div>
@@ -22,12 +21,11 @@ const page = () => {
         <h1>Best Courses</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
          <div className='row'>
-         <FacilityCardImage text="Web Development" src="img/course1.png" />
-         <FacilityCardImage text="Artificial Intelligence" src="img/course2.png"/>
-         <FacilityCardImage text="Data Science" src="img/course3.png"/>
+         <FacilityCardImage text="Web Development" src="/img/course1.png" />
+         <FacilityCardImage text="Artificial Intelligence" src="/img/course2.png"/>
+         <FacilityCardImage text="Data Science" src="/img/course3.png"/>
          </div>
          </section>
-         <Footer />
     </div>
   )
 }

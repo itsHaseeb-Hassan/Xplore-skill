@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
+import Image from "next/image"
 
 const Page = () => {
   return (
@@ -13,7 +13,7 @@ const Page = () => {
         <div className="blog-left">
                 <h2>Our Certificate & Online Program</h2>
                 <h5>Aug 1, 2021</h5>
-                <img src="img/post.png" alt=""/>
+                <Image src="/img/post.png" alt="" width={500} height={500} />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium dolor consequatur, nobis quae obcaecati delectus at aspernatur, placeat quasi iure mollitia. Repellendus a ut nostrum dolore velit odit cumque, quos doloribus sint id aperiam eius aliquam quo modi sequi rem quia exercitationem laborum, ratione expedita! Deleniti velit officia incidunt illum.</p>
                 <br/>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore corrupti blanditiis deserunt
@@ -69,7 +69,6 @@ const Page = () => {
             </div>
             </div>
             </section>
-            <Footer />
     </div>
   )
 }

@@ -4,7 +4,6 @@ import Hero from './components/Hero'
 import Card from './components/Card'
 import ImgCard from './components/ImgCard'
 import FacilityCardImage from './components/FacilityCardImage'
-import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -36,9 +35,9 @@ export default function Home() {
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
 
         <div className="row">
-          <ImgCard text="DELHI" src="img/Campus1.png"/>
-          <ImgCard text="HYDERABAD" src="img/Campus2.png"/>
-          <ImgCard text="MUMBAI" src="img/Campus3.png"/>
+          <ImgCard text="DELHI" src="/img/Campus1.png"/>
+          <ImgCard text="HYDERABAD" src="/img/Campus2.png"/>
+          <ImgCard text="MUMBAI" src="/img/Campus3.png"/>
           </div>
           </section>
           <section className="facilities">
@@ -49,9 +48,9 @@ export default function Home() {
         <h1>Our Facilities</h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
          <div className='row'>
-         <FacilityCardImage text="Best Libary" src="img/libary.png" />
-         <FacilityCardImage text="Athletics" src="img/playground.png"/>
-         <FacilityCardImage text="Tasty and Healthy Food" src="img/food.png"/>
+         <FacilityCardImage text="Best Libary" src="/img/libary.png" />
+         <FacilityCardImage text="Athletics" src="/img/playground.png"/>
+         <FacilityCardImage text="Tasty and Healthy Food" src="/img/food.png"/>
          </div>
          </section>
          <section className="testimonials">
@@ -64,7 +63,7 @@ export default function Home() {
 
         <div className="row">
             <div className="testimonials-col">
-                <img src="img/user.png" alt="oo.."/>
+                <Image src="/img/user.png" alt="oo.." width={500} height={500} />
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
@@ -78,7 +77,7 @@ export default function Home() {
                 </div>
             </div>
             <div className="testimonials-col">
-                <img src="img/user.png" alt="oo.."/>
+                <Image src="/img/user.png" alt="oo.." width={500} height={500}/>
                 <div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi maiores in nostrum rerum voluptatem
                         praesentium veritatis alias omnis voluptate nisi aperiam, voluptatum quibusdam itaque a
@@ -97,7 +96,6 @@ export default function Home() {
         <h1>GET READY FOR A BRIGHT FUTURE</h1>
         <a href="contact.html" className="hero_btn">CONTACT US</a>
     </section>
-    <Footer />
           </>
     
   )
